@@ -37,7 +37,7 @@ const FirstModal = ({ isOpen, onClose }) => {
 				}}
 			>
 				<ModalBody>
-					<Stack spacing="0.8rem" alignItems="center" justifyContent="center" textAlign="center">
+					<Stack mt='2rem' spacing="0.8rem" alignItems="center" justifyContent="center" textAlign="center">
 						<Spinner size="xl" color="red.500" />
 
 						<Heading>Hold up Champ!!</Heading>

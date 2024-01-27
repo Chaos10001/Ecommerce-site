@@ -13,8 +13,29 @@ import {
 } from '@chakra-ui/react';
 import img from '../../asserts/Rectangle 57.png';
 import { Link as ReactRouterLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import FirstModal from '../Modals/FirstModal';
+import SecondModal from '../Modals/SecondModal';
 
 const VerifyNumber = () => {
+	const [ showFIrstModal, setshowFIrstModal ] = useState(false);
+	const [ showSecondModal, setshowSecondModal ] = useState(false);
+
+	const handleButtonClick = () => {
+		setshowFIrstModal(true);
+	};
+	useEffect(
+		() => {
+			if (showFIrstModal) {
+				const timer = setTimeout(() => {
+					setshowFIrstModal(false);
+					setshowSecondModal(true);
+				}, 5000);
+				return () => clearTimeout(timer);
+			}
+		},
+		[ showFIrstModal ]
+	);
 	return (
 		<Box>
 			<Container maxW="2xl" centerContent>
@@ -44,7 +65,7 @@ const VerifyNumber = () => {
 				</Box>
 			</Container>
 
-			<Stack spacing={4} justifyContent='center' alignItems='center'>
+			<Stack spacing={4} justifyContent="center" alignItems="center">
 				<Button
 					size="md"
 					height="48px"
@@ -55,9 +76,12 @@ const VerifyNumber = () => {
 					borderRadius="7px"
 					color="white"
 					variant="unstyled"
+					onClick={handleButtonClick}
 				>
 					Submit
 				</Button>
+				<FirstModal isOpen={showFIrstModal} onClose={() => setshowFIrstModal(false)} />
+				<SecondModal isOpen={showSecondModal} onClose={() => setshowSecondModal(false)} />
 				<Link to="/signup" as={ReactRouterLink}>
 					<Button
 						size="md"

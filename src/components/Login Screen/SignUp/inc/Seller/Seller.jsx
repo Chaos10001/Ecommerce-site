@@ -63,19 +63,19 @@ const Seller = () => {
 				<FormControl mt="1rem">
 					<FormLabel>Create Password </FormLabel>
 					<Input type="password" placeholder="*******" />
-					<FormHelperText mr="9rem">Must be atleast 8 characters </FormHelperText>
+					<FormHelperText mb='1rem' mr="7rem">Must be at least 8 characters </FormHelperText>
 				</FormControl>
 			</Box>
-			<Stack spacing="6rem" direction="row" my="1rem">
-				<Checkbox colorScheme="red" defaultChecked>
+			<Box justifyContent='center' alignContent='center'>
+				<Checkbox colorScheme="red">
 					<Text fontWeight="semibold">
 						I agree to <span className="defaultColor">Terms,</span>{' '}
-						<span className="defaultColor"> Privacy Policy</span> and{' '}
+						<span className="defaultColor">Privacy Policy</span> and{' '}
 						<span className="defaultColor">Fees</span>
 					</Text>
 				</Checkbox>
-			</Stack>
-			<Stack spacing={4} justifyContent='center' alignItems='center'>
+			</Box>
+			<Stack spacing={4} justifyContent='center' mt='1rem' alignItems='center'>
 				<Link to='/verifynumber' as={ReactRouterLink}>
 					<Button
 						size="md"
@@ -119,4 +119,4 @@ const Seller = () => {
 	);
 };
 
-export default Seller;
+export default Seller
