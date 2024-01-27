@@ -46,39 +46,41 @@ const SignUp = () => {
 			</Container>
 
 			<Flex mt="19px">
-				<Card mr="9px" h="8rem" w="12rem">
+				<Card mr="9px" h="6rem" w="13rem">
 					<Box alignItems="end">
 						<Checkbox
 							colorScheme="red"
-							ml="8.8rem"
+							ml="7.6rem"
+							mt="0.3rem"
 							checked={isChecked1}
 							onChange={() => setisChecked1(!isChecked1)}
 						/>
 					</Box>
-					<CardFooter pt="5rem">
+					<CardFooter pt="3rem">
 						<Text fontWeight="bold">I’m a Seller</Text>
 					</CardFooter>
 				</Card>
-				<Card w="12rem" h="8rem">
+				<Card w="13rem" h="6rem">
 					<Box alignItems="end">
 						<Checkbox
 							colorScheme="red"
-							ml="8.8rem"
+							ml="7.6rem"
+							mt="0.3rem"
 							checked={isChecked2}
 							onChange={() => setisChecked2(!isChecked2)}
 						/>
 					</Box>
-					<CardFooter pt="5rem">
+					<CardFooter pt="3rem">
 						<Text fontWeight="bold">I’m a Buyer</Text>
 					</CardFooter>
 				</Card>
 			</Flex>
 
-			<Stack mt="12rem" spacing={4}>
+			<Stack mt="12rem" spacing={4} justifyContent="center" alignItems="center">
 				<Button
 					size="md"
 					height="48px"
-					width="330px"
+					width="18.7rem"
 					border="2px"
 					bg="linear-gradient(92.66deg, #f0507a 0%, #971075 100%)"
 					borderRadius="7px"

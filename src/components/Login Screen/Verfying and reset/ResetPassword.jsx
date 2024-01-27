@@ -36,11 +36,11 @@ const ResetPassword = () => {
 					</FormControl>
 				</Box>
 
-				<Stack spacing={4}>
+				<Stack spacing={4} justifyContent="center" alignItems="center">
 					<Button
 						size="md"
 						height="48px"
-						width="330px"
+						width="18.7rem"
 						border="2px"
 						bg="linear-gradient(92.66deg, #f0507a 0%, #971075 100%)"
 						className="button"
@@ -54,7 +54,7 @@ const ResetPassword = () => {
 						<Button
 							size="md"
 							height="48px"
-							width="330px"
+							width="18.7rem"
 							border="1px"
 							borderColor="gray"
 							bg="transparent"

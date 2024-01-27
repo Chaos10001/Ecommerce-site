@@ -40,7 +40,7 @@ const SecondModal = ({ isOpen, onClose }) => {
 						<svg
 							width="87"
 							height="90"
-							viewBox="0 0 87 90"
+							viewBox="0 0 87 90"width="18.7rem"
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg"
 							xmlns:xlink="http://www.w3.org/1999/xlink"
